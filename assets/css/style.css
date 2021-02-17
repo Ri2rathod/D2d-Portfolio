@@ -274,10 +274,11 @@
 .about>.about-card>.card-image{
     width: 30%;
     /* background-color: #453A94; */
-    background-image: url('../image/albert-dera-ILip77SbmOE-unsplash.jpg');
+    background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=albert-dera-ILip77SbmOE-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-position-y: 15%;
     height: 15rem;
     margin: auto;
     /* border: solid 1px white; */
