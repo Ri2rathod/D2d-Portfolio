@@ -122,6 +122,7 @@
     position: absolute;
     left: 75%;
     top: 20%;
+    /* transform: translate(275%,25%); */
     background: linear-gradient(90deg, #FBC2EB 0%, #A6C1EE 100%);
     /* scroll-behavior: smooth; */
 }
@@ -142,6 +143,17 @@
     position: absolute;
     background: linear-gradient(90deg, #F43B47 0%, #453A94 100%);
 
+}
+.oval-5{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
+    z-index: 1;
+    transform: translate(275%,0%);
+    /* overflow-y: hidden;
+    overflow-x: auto; */
 }
 /* .service-hr1{
         
@@ -238,3 +250,211 @@
 
     margin-left: 10%;
 }
+
+/* About Section */
+
+.about{
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #FFF1EB 0%, #ACE0F9 100%);
+    border-radius: 30px;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.about>.about-title{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about>.about-card{
+    padding-top: 2%;
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #6713D2;
+    /* margin-bottom: 10%; */
+    padding-bottom: 2%;
+
+    background: linear-gradient(90deg, #48C6EF 0%, #6F86D6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+.about>.about-card>.card-image{
+    width: 30%;
+    /* background-color: #453A94; */
+    background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=albert-dera-ILip77SbmOE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 15%;
+    height: 15rem;
+    margin: auto;
+    /* border: solid 1px white; */
+    border-radius: 25px;
+
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px;
+
+}
+.about>.about-card>.card-image>img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.about>.about-card>.card-body{
+    width: 60%;
+    /* background-color: coral; */
+    margin-right: auto;
+
+    background: rgba(196, 196, 196, 0.1);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 40px;
+}
+
+.about>.about-card>.card-body>h1{
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+.about>.about-card>.card-body>p{
+    margin-left: 10%;
+    padding-top: 1%;
+    width: 80%;
+}
+.about-pagging{
+    text-align: center;
+    padding: 2% 0px 2%;
+    width: 100%;
+    /* justify-content: center;
+    align-items: center;
+    margin: auto; */
+}
+.about-pagging>div{
+    width: 5%;
+    background-color: gray;
+    border-radius: 10px;
+    margin: auto;
+}
+.about-pagging>div>.indicator{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: black;
+    display: inline-block ;
+    
+}
+.active{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+/* Footer Section */
+.footer{
+    display: flex;
+    text-align: center;
+    /* background-color: #434343; */
+    padding-top: 3%;
+    position: relative;
+    background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+    border-radius: 40px 40px 0px 0px;
+    overflow: hidden;
+}
+.footer>.footer_service,.footer>.social_media_subcribe,.footer>.footer_About_Us{
+    width: 33%; 
+    list-style-type: none;
+    z-index: 1;
+}
+.footer_service>h2,.footer_About_Us>h2{
+    margin-bottom: 15px;
+}
+.footer>.social_media_subcribe>.social_media>.icon{
+    display: flex;
+    justify-content: center;
+}
+.footer>ul>li{
+    margin-bottom: 15px;
+}
+
+.icon{
+    height: auto;
+    /* background-color: wheat; */
+    width: 55%;
+    margin: auto;
+    /* border-radius: 10px;   */
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #B9B9B9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 30px; 
+}
+.icon>div{
+    margin: auto;
+    margin-top: 1%;
+}
+.icon>div>img{
+    height:50px ;
+    width:50px ;
+}
+
+.subcribe>h2{
+    margin:5% 0% 2%;
+}
+
+.input-email{
+    /* background-color: #CC208E; */
+    width: 65%;
+    margin: auto;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 50px;
+    border: solid 1px white;
+    margin-bottom: 50px;
+
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 50px;
+}
+.input-email>input{
+    width: 90%;
+    background: none;
+    border: none;
+    margin-left: 15px;
+}
+.input-email>input:focus{
+    outline: none;
+    
+}
+.input-email>input::placeholder{color: white;}
+.input-email>button{
+    width: 14.5%;
+    color: white;
+    padding: 0px 2px 0px;
+    border: solid 1px gray;
+    border-radius: 100%;
+    margin: 2px;
+    background:none;
+}
+.input-email>button:focus{outline:none;}
