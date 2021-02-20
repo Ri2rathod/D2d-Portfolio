@@ -5,6 +5,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     
 }
+.btn-default:focus{outline: none}
 .header{
     background: linear-gradient(90deg, #434343 0%, #000000 100%);
     border-radius: 0px 0px 30px 30px;
@@ -458,3 +459,70 @@ border-radius: 50px;
     background:none;
 }
 .input-email>button:focus{outline:none;}
+
+
+/* Style For Login Page */
+.containt{
+    padding-bottom: 15%;
+}
+.form-heading{
+    font-size: 3rem;
+    text-align: center;
+    padding: 3% 0% 3%;
+}
+.hr-style{
+    width: 40%;
+    margin: 3% auto 3%;
+}
+.sign-in-form{
+    width: 30%;
+    background-color: #434343;
+    margin: 4% auto 0%;
+}
+.form>div{
+    width: 75%;
+    margin: 5% auto 5%;
+
+}
+.form>div>input{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background:none;
+    border: solid 1px white;
+    padding-left: 20px;
+}
+.form>.submit-btn{
+    width: 65%;
+    margin: 5% auto 5%;
+}
+.form>.submit-btn>button{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 1px white;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.another-div{
+    display: flex;
+}
+.another-div>hr{
+    margin: auto;
+    height: 0;
+    width: 15%;
+}
+.another-div>p{margin: 0% -10% 0%;}
+.sign-in-other{
+    width: 40%;
+    margin: auto;
+    position: absolute;
+}
+.sign-in-other>.icon{
+    display: flex;
+    
+}
+.sign-in-other>.icon>div{margin: 1% auto 1%;}
