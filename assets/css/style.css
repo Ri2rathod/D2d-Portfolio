@@ -3,9 +3,10 @@
 @media only screen 
 and (max-width : 320px)
 {
-    /* Add Your CSS Styling Here */
     :root{
         --width:95%;
+        --contain-margin:2% 0% 7%;
+        --other-signin:80%;
     }
 }
 
@@ -14,9 +15,14 @@ and (max-width : 320px)
 and (min-width : 321px)
 and (max-width : 767px)
 {
-    /* Add Your CSS Styling Here */
     :root{
-        --width:80%;
+        --width:90%;
+        --contain-margin:2% -1% 7%;
+        --inputfield-width:90%;
+        --other-signin:110%;
+
+        --other-signin-left:25%;
+        --other-signin-bottom:0%;
     }
 }
 
@@ -25,9 +31,13 @@ and (max-width : 767px)
 @media only screen 
 and (min-width : 1201px) 
 {
-    /* Add Your CSS Styling Here */
     :root{
         --width:30%;
+        --contain-margin:2% 4% 7%;
+        --inputfield-width:75%;
+
+        --other-signin-left:42%;
+        --other-signin-bottom:11%;
     }
 }
 
@@ -41,9 +51,11 @@ and (orientation : portrait)
 {
     :root{
         --width:60%;
+        --contain-margin:2% 2% 7%;
+        --other-signin-left: 40%;
+        --other-signin-bottom: 5%;
     }
 }
-
 
 /* Tablets (landscape) ------------------- */
 @media only screen 
@@ -51,7 +63,13 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape)
 {   
-/* Add Your CSS Styling Here */
+:root{
+    --width:60%;
+    --contain-margin:2% 4% 7%;
+    --other-signin-left: 40%;
+    --other-signin-bottom: 5%;
+}
+
 }
 
 /* Old Desktops and laptops ------------------ */
@@ -59,9 +77,11 @@ and (orientation : landscape)
 and (min-width : 1025px) 
 and (max-width:1200px)
 {
-/* Add Your CSS Styling Here */
     :root{
         --width:50%;
+        --contain-margin:2% 4% 7%;
+        
+        --inputfield-width:80%;
     }
 }
 
@@ -86,8 +106,8 @@ and (max-width:1200px)
     height:10vh ;
     width: 100% ;
     /* background-color: khaki; */
-    display: flex;
-    /* position: fixed; */
+    display: flex; 
+    
 }
 .nav-title{
     /* display: flex; */
@@ -532,6 +552,7 @@ border-radius: 50px;
 /* Style For Login Page */
 .login-padding{
     padding-bottom: 6%;
+    margin: var(--contain-margin);
 }
 .form-heading{
     font-size: 3rem;
@@ -562,7 +583,7 @@ border-radius: 50px;
     border-radius: 30px;
 }
 .form>div{
-    width: 75%;
+    width: var(--inputfield-width);
     margin: 5% auto 5%;
 
 }
@@ -617,18 +638,19 @@ border-radius: 50px;
 }
 .another-div>p{margin: 0% -10% 0%;}
 .sign-in-other{
-    width: 40%;
+    
     margin: auto;
     position: absolute;
-    left: 30%;
-    bottom: 10%;
+    left:var(--other-signin-left);
+    bottom: var(--other-signin-bottom);
     
 }
 .sign-in-other>.icon{
+    width: var(--other-signin);
     display: flex;
     border-radius: 20px;
     backdrop-filter :blur(8px) ;
 }
 .sign-in-other>.icon>div{
-    margin: 2% auto 1%;
+    margin: 2% 2px 1%;
 }
