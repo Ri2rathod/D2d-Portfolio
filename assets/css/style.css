@@ -1,3 +1,71 @@
+
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (max-width : 320px)
+{
+    /* Add Your CSS Styling Here */
+    :root{
+        --width:95%;
+    }
+}
+
+/* Smartphones (landscape) ---------------- */
+@media only screen 
+and (min-width : 321px)
+and (max-width : 767px)
+{
+    /* Add Your CSS Styling Here */
+    :root{
+        --width:80%;
+    }
+}
+
+
+/* Desktops ------------------ */
+@media only screen 
+and (min-width : 1201px) 
+{
+    /* Add Your CSS Styling Here */
+    :root{
+        --width:30%;
+    }
+}
+
+
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+    :root{
+        --width:60%;
+    }
+}
+
+
+/* Tablets (landscape) ------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+{   
+/* Add Your CSS Styling Here */
+}
+
+/* Old Desktops and laptops ------------------ */
+@media only screen 
+and (min-width : 1025px) 
+and (max-width:1200px)
+{
+/* Add Your CSS Styling Here */
+    :root{
+        --width:50%;
+    }
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,7 +73,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     
 }
-.btn-default:focus{outline: none}
+.btn-default:focus{outline-style: none;}
 .header{
     background: linear-gradient(90deg, #434343 0%, #000000 100%);
     border-radius: 0px 0px 30px 30px;
@@ -462,22 +530,36 @@ border-radius: 50px;
 
 
 /* Style For Login Page */
-.containt{
-    padding-bottom: 15%;
+.login-padding{
+    padding-bottom: 6%;
 }
 .form-heading{
     font-size: 3rem;
     text-align: center;
     padding: 3% 0% 3%;
+    
+    /* -webkit-text-stroke: 0.01px black; */
+    color: #FFFFFF;
+
+    /* border: 1px solid rgba(0, 0, 0, 0.22); */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* -webkit-text-stroke-width: 1ch;
+    -webkit-text-stroke-color: black; */
 }
 .hr-style{
     width: 40%;
     margin: 3% auto 3%;
+    border:none;    
+    border-top:solid 0.01rem gray;
+    border-radius: 2px;
 }
 .sign-in-form{
-    width: 30%;
-    background-color: #434343;
+    width: var(--width);
+    /* background-color: #434343; */
     margin: 4% auto 0%;
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.95);
+    border-radius: 30px;
 }
 .form>div{
     width: 75%;
@@ -488,9 +570,15 @@ border-radius: 50px;
     width: 100%;
     height: 40px;
     border-radius: 50px;
-    background:none;
+    background: rgba(143, 143, 143, 0.12);
     border: solid 1px white;
     padding-left: 20px;
+}
+/* input focus effect */
+.form>div>input:focus{
+    outline-style: none;
+    border: solid 1px black;
+    transition: 0.5s;
 }
 .form>.submit-btn{
     width: 65%;
@@ -501,28 +589,46 @@ border-radius: 50px;
     height: 40px;
     border-radius: 50px;
     border: solid 1px white;
-    background-color: #000000;
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
     color: white;
     font-size: 1rem;
     font-weight: bold;
+    background-size: 200% auto;
 }
+.form>.submit-btn>button:hover{
+    background-position: right center; /* change the direction of the change here */
+    transition: 0.5s;
+}
+
+
 
 .another-div{
     display: flex;
+    padding-bottom: 3.5rem;
+    color: #000000;
 }
 .another-div>hr{
     margin: auto;
     height: 0;
     width: 15%;
+    border:none;    
+    border-top:solid 0.01rem gray;
+    border-radius: 2px;
 }
 .another-div>p{margin: 0% -10% 0%;}
 .sign-in-other{
     width: 40%;
     margin: auto;
     position: absolute;
+    left: 30%;
+    bottom: 10%;
+    
 }
 .sign-in-other>.icon{
     display: flex;
-    
+    border-radius: 20px;
+    backdrop-filter :blur(8px) ;
 }
-.sign-in-other>.icon>div{margin: 1% auto 1%;}
+.sign-in-other>.icon>div{
+    margin: 2% auto 1%;
+}
