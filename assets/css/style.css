@@ -6,7 +6,7 @@ and (max-width : 320px)
     :root{
         
         --nav-display-content:inline;
-
+        --font-size:1.5rem;
         --width:90%;
         --contain-margin:2% -1% 7%;
         --inputfield-width:90%;
@@ -27,13 +27,16 @@ and (max-width : 767px)
 {
     :root{
         --width:90%;
+        --font-size:1rem;
+        --service-card-width:auto;
+
         --contain-margin:2% -1% 7%;
         --inputfield-width:90%;
         --other-signin:110%;
 
+        --display:block;
         --other-signin-left:35%;
         --other-signin-bottom:4%;
-
         --login-padding-bottom:8%;
     }
 }
@@ -46,12 +49,14 @@ and (min-width : 1201px)
     :root{
         
         --nav-display-content:flex;
+        --font-size:2.5rem;
 
-
+        --service-card-width:17%;
         --width:30%;
         --contain-margin:2% 4% 7%;
         --inputfield-width:75%;
         --other-signin:110%;
+        --display:flex;
 
         --other-signin-left:42%;
         --other-signin-bottom:8%;
@@ -194,7 +199,7 @@ html {
     padding-top:2%  ;
     text-align: center;
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: var(--font-size);
 }
 .containt>.button{
     text-align: center;
@@ -204,7 +209,7 @@ html {
 }
 .containt>.button>button{
     height: 50px;
-    width: 400px;
+    width: var(--width);
     margin-bottom: 50px;
     border-radius: 30px;
     border: none;
@@ -246,10 +251,10 @@ html {
     background: linear-gradient(90deg, #CC208E 0%, #6713D2 100%);
 }
 .oval-4{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     left: 65%;
-    bottom: -80%;
+    bottom: 0%;
     border-radius: 100%;
     position: absolute;
     background: linear-gradient(90deg, #F43B47 0%, #453A94 100%);
@@ -294,7 +299,8 @@ html {
     width: 100%;
     margin-top: 50px;
     background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
-
+    overflow: hidden;
+    position: relative;
     /* padding-left: 50px;
     padding-right: 50px; */
     border-radius: 30px;
@@ -309,6 +315,7 @@ html {
     color: white;
     text-transform: capitalize;
 }
+.service>.heading>h1{position: relative;}
 .service>.heading>hr{
     width: 20%;
     margin: 0px 2% 0px;
@@ -318,14 +325,16 @@ html {
 .service-contain{
     width: 100%;
     padding: 2% 2% 2%;
-    display: flex;
+    display: var(--display);
     justify-content: center;
 }
 .service-contain>.service-card{
-    height: 65vh;
-    width: 17%;
+    height: auto;
+
+    width: var(--service-card-width);
+    margin:auto;
     justify-content: center;
-    margin: 0px 30px 0px;
+    margin: 3% 30px 3%;
     background: rgba(0, 0, 0, 0.17);
     border: 1px solid #FFFFFF;
     color: white;
@@ -354,7 +363,7 @@ html {
     margin-top: 50px;
     text-align: center;
     width: 90%;
-    /* padding-bottom: 100px; */
+    padding-bottom: 50px;
     /* background-color: brown; */
 }
 .card-contain>p{
