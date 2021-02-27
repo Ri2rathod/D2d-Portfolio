@@ -51,8 +51,8 @@ and (max-width : 767px)
         --other-signin:110%;
 
         --display:block;
-        --other-signin-left:35%;
-        --other-signin-bottom:4%;
+        --other-signin-left:27%;
+        --other-signin-bottom:2%;
         --login-padding-bottom:8%;
     }
 }
