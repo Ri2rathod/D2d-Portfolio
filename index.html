@@ -19,16 +19,18 @@
                 <h2>D2d's</h2>
             </div>
             <div class="nav-item">
-                <ul>
+                <div class="nav-button">
+                    <button class="btn-default" onclick="nav_toggle()"><i class="fas fa-bars fa-2x"></i></button>
+                </div>
+                <ul id="navbar-item-toggle">
                     <li>Home</li>
                     <li>Gallery</li>
                     <li>Service</li>
                     <li>About</li>
                 </ul>
             </div>
-            <div class="nav-button">
-                <button class="btn-default">Sign In</button>
-            </div>
+           
+            
         </nav>
         <div class="container">
             <div class="containt">
@@ -111,7 +113,6 @@
         </div>
         <div class="about-card">
             <div class="card-image">
-                <!-- <img src="assets/image/albert-dera-ILip77SbmOE-unsplash.jpg" alt=""> -->
             </div>
             <div class="card-body">
                 <h1>Rathod Ritesh</h1>
@@ -129,6 +130,7 @@
     </section>
 
     <footer class="footer">
+
         <div class="oval-5"></div>
         <ul class="footer_service">
             <h2>Service</h2>
@@ -148,20 +150,16 @@
                 <h2>Social Media</h2>
                 <div class="icon">
                     <div class="icon-facebook">
-                        <!-- <i class="fab fa-facebook fa-2x"></i> -->
                         <img src="assets/svg/facebook.svg" alt="">
                     </div>
                     <div class="icon-google">
-                        <!-- <i class="fab fa-google fa-2x"></i> -->
                         <img src="assets/svg/google.svg" alt="">
                     </div>
                     <div class="icon-twitter">
                         <img src="assets/svg/twitter.svg" alt="">
-                        <!-- <i class="fab fa-twitter fa-2x"></i> -->
                     </div>
                     <div class="icon-github">
                         <img src="assets/svg/instagram.svg" alt="">
-                        <!-- <i class="fab fa-github fa-2x"></i> -->
                     </div>
                 </div>
             </div>
@@ -174,6 +172,22 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" > 
+        var toggle=0;
+        function nav_toggle(){
+            if(toggle==0)
+            {
+                document.getElementById('navbar-item-toggle').style.display="none";
+                toggle=1;
+            }
+            else
+            {
+                document.getElementById('navbar-item-toggle').style.display="";
+                toggle=0;
+            }
+    }
+    </script>
     <!-- <script src="https://kit.fontawesome.com/d44bfdf458.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
