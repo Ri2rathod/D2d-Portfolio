@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="shortcut icon" href="assets/image/D2d Icon.png"  type="image/png">
     <title>D2d's</title>
 </head>
@@ -33,7 +36,7 @@
             
         </nav>
         <div class="container">
-            <div class="containt">
+            <div class="containt" data-aos="zoom-out">
                 <div class="heading">
                     <h1>this is our team D2d’s full stack web developer</h1>
                 </div>
@@ -59,7 +62,7 @@
             <hr>
         </div>
         <div class="service-contain">
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up">
                 <div class="card-image">
                     <img src="assets/svg/wireframe.svg" alt="">
                 </div>
@@ -70,7 +73,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up">
                 <div class="card-image">
                     <img src="assets/svg/front-end.svg" alt="">
                 </div>
@@ -81,7 +84,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up">
                 <div class="card-image">
                     <img src="assets/svg/backend.svg" alt="">
                 </div>
@@ -92,7 +95,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up">
                 <div class="card-image">
                     <img src="assets/svg/full-stack.svg" alt="">
                 </div>
@@ -112,9 +115,9 @@
             <h2>About</h2>
         </div>
         <div class="about-card">
-            <div class="card-image">
+            <div class="card-image" data-aos="fade-right">
             </div>
-            <div class="card-body">
+            <div class="card-body"  data-aos="fade-left"> 
                 <h1>Rathod Ritesh</h1>
                 <P>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque, at pellentesque et venenatis congue id at. Adipiscing aliquam libero auctor feugiat fermentum ac dui habitant.</P>
             </div>
@@ -173,6 +176,11 @@
         </div>
     </footer>
     <script src="assets/js/nav-toggle.js"></script>
+    
     <!-- <script src="https://kit.fontawesome.com/d44bfdf458.js" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
