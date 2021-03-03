@@ -1,4 +1,6 @@
-var toggle=0;
+
+        var toggle=1;
+     
         function nav_toggle(){
             if(toggle==0)
             {
