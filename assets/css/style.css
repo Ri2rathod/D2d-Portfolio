@@ -6,8 +6,10 @@ and (max-width : 320px)
     :root{
         
         --width:90%;
-        --font-size:1.7rem;
+        --font-size:1.5rem;
         --service-card-width:auto;
+        
+        --font-size-heading:1.5rem; 
 
         --nav-title-margin:4% 0% 4%;
         --nav-toggle-button-align:end;
@@ -21,10 +23,19 @@ and (max-width : 320px)
         --other-signin:110%;
 
         --display:block;
-        --other-signin-left:35%;
-        --other-signin-bottom:4%;
-        --login-padding-bottom:8%;
+        --other-signin-left:16%;
+        --other-signin-bottom:5%;
+        --login-padding-bottom:15%;
+        
+        --about-profile-display:block;
+        --about-profile-width:95%;
+        --about-profile-card-body-width:95%;
 
+        --footer-display:block;
+        --footer-item-width:100%;
+        --footer-social-media-div-width:65%;
+        --footer-subcribe-width:85%;
+        --footer-item-margin-top:50px;
     }
 }
 
@@ -37,6 +48,8 @@ and (max-width : 767px)
         --width:90%;
         --font-size:1rem;
         --service-card-width:auto;
+        
+        --font-size-heading:1.5rem; 
 
         --nav-title-margin:4% 0% 4%;
         --nav-toggle-button-align:end;
@@ -51,9 +64,19 @@ and (max-width : 767px)
         --other-signin:110%;
 
         --display:block;
-        --other-signin-left:35%;
-        --other-signin-bottom:4%;
+        --other-signin-left:27%;
+        --other-signin-bottom:2%;
         --login-padding-bottom:8%;
+
+        --about-profile-display:block;
+        --about-profile-width:95%;
+        --about-profile-card-body-width:95%;
+
+        --footer-display:block;
+        --footer-item-width:100%;
+        --footer-social-media-div-width:65%;
+        --footer-subcribe-width:85%;
+        --footer-item-margin-top:50px;
     }
 }
 
@@ -81,8 +104,16 @@ and (min-width : 1201px)
 
         --other-signin-left:42%;
         --other-signin-bottom:8%;
-
         --login-padding-bottom:5%;
+        
+        --about-profile-display:flex;
+        --about-profile-width:30%;
+        --about-profile-card-body-width:65%;
+
+        --footer-display:flex;
+        --footer-item-width:33%;
+        --footer-social-media-div-width:55%;
+        --footer-subcribe-width:65%;
     }
 }
 
@@ -110,8 +141,17 @@ and (max-width:1200px)
 
         --other-signin-left:42%;
         --other-signin-bottom:8%;
-
         --login-padding-bottom:5%;
+
+        
+        --about-profile-display:flex;
+        --about-profile-width:30%;
+        --about-profile-card-body-width:65%;
+
+        --footer-display:flex;
+        --footer-item-width:33%;
+        --footer-social-media-div-width:55%;
+        --footer-subcribe-width:65%;
     }
 }
 
@@ -144,6 +184,15 @@ and (orientation : portrait)
         --other-signin-left:35%;
         --other-signin-bottom:4%;
         --login-padding-bottom:8%;
+
+        --about-profile-display:flex;
+        --about-profile-width:30%;
+        --about-profile-card-body-width:65%;
+
+        --footer-display:block;
+        --footer-item-width:100%;
+        --footer-social-media-div-width:55%;
+        --footer-subcribe-width:65%;
     }
 }
 
@@ -162,7 +211,7 @@ and (orientation : landscape)
     --nav-toggle-button-align:end;
     --nav-toggle-button-margin:4%;
     --nav-toggle-button-display:none;
-    --nav-item-top-margin:-15%;
+    --nav-item-top-margin:-9%;
     --nav-display-content:flex;
 
 
@@ -174,6 +223,16 @@ and (orientation : landscape)
     --other-signin-left:35%;
     --other-signin-bottom:4%;
     --login-padding-bottom:8%;
+
+    --about-profile-display:flex;
+    --about-profile-width:30%;
+    --about-profile-card-body-width:65%;
+
+    --footer-display:block;
+    --footer-item-width:100%;
+    --footer-social-media-div-width:55%;
+    --footer-subcribe-width:65%;
+
     
 }
 
@@ -236,6 +295,7 @@ html {
     list-style: none;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 .nav-item>ul>li{
     margin: 25px 5% 25px;
@@ -245,7 +305,7 @@ html {
     padding-top: 1% ;
     padding-right: 7%;
     position: relative;
-    transform: translate(0px,-110%);
+    transform: translate(0px,-94%);
     text-align: var(--nav-toggle-button-align);
     margin-top: var(--nav-toggle-button-margin);
 }
@@ -352,10 +412,9 @@ html {
     border-radius: 100%;
     position: absolute;
     background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
-    z-index: 1;
-    transform: translate(275%,0%);
-    /* overflow-y: hidden;
-    overflow-x: auto; */
+    z-index: 1;   
+     right: -73px;
+    bottom: -16%;
 }
 /* .service-hr1{
         
@@ -467,6 +526,7 @@ html {
     border-radius: 30px;
     align-items: center;
     margin-bottom: 3%;
+    overflow: hidden;
 }
 .about>.about-title{
     padding-top: 2%;
@@ -477,7 +537,7 @@ html {
 }
 .about>.about-card{
     padding-top: 2%;
-    display: flex;
+    display: var(--about-profile-display);
     width: 90%;
     height: auto;
     margin: auto;
@@ -490,14 +550,14 @@ html {
     border-radius: 50px;
 }
 .about>.about-card>.card-image{
-    width: 30%;
+    width: var(--about-profile-width);
     /* background-color: #453A94; */
     background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=albert-dera-ILip77SbmOE-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-position-y: 15%;
-    height: 15rem;
+    height: 20rem;
     margin: auto;
     /* border: solid 1px white; */
     border-radius: 25px;
@@ -515,14 +575,14 @@ html {
     box-sizing: border-box;
 }
 .about>.about-card>.card-body{
-    width: 60%;
+    width: var( --about-profile-card-body-width );
     /* background-color: coral; */
-    margin-right: auto;
+    margin:0px auto 0px;
 
     background: rgba(196, 196, 196, 0.1);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 40px;
@@ -570,7 +630,7 @@ html {
 
 /* Footer Section */
 .footer{
-    display: flex;
+    display: var(--footer-display);
     text-align: center;
     /* background-color: #434343; */
     padding-top: 3%;
@@ -580,7 +640,9 @@ html {
     overflow: hidden;
 }
 .footer>.footer_service,.footer>.social_media_subcribe,.footer>.footer_About_Us{
-    width: 33%; 
+    width: var(--footer-item-width); 
+    margin-top: var(--footer-item-margin-top) ;
+    position: relative;
     list-style-type: none;
     z-index: 1;
 }
@@ -598,7 +660,7 @@ html {
 .icon{
     height: auto;
     /* background-color: wheat; */
-    width: 55%;
+    width: var(--footer-social-media-div-width);
     margin: auto;
     /* border-radius: 10px;   */
     margin-top: 15px;
@@ -626,7 +688,7 @@ border-radius: 30px;
 
 .input-email{
     /* background-color: #CC208E; */
-    width: 65%;
+    width: var(--footer-subcribe-width);
     margin: auto;
     height: 2.5rem;
     display: flex;
